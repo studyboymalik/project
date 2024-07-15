@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D transfrom</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+
+            width: 150px;
+            height: 150px;
+            background-color: beige;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 1s linear 1s;
+
+        }
+
+        .container {
+            width: 90vw;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box:hover {
+            /* transform: rotate(50deg); */
+            /* transform: scale(0.2); */
+            /* transform: skew(-50deg); */
+            transform: translate(-100px);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            That is 2D transfrom
+        </div>
+    </div>
+</body>
+
+</html>
