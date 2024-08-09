@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shadows</title>
     <style>
-        .container{
-            background-color: aqua;
+        .container {
+            background-color: beige;
+            height: 650px;
             border: 2px solid black;
-            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: aquamarine;
+            height: 330px;
+            width: 330px;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 10px 10px 20px rgb(41, 114, 129); */
+            /* box-shadow:  inset 19px 25px 20px 30px  rgb(41, 114, 129); */
+             /* box-shadow:  30px 40px yellowgreen, 25px 43px red; */
+            /* we can create double shadow  syetex 333px 222px black, 22px 33px green  */
+
 
         }
-        #box{
-
+        #head1{
+            text-shadow: 20px 10px greenyellow;
         }
     </style>
 </head>
+
 <body>
-<div class="container">
-<div dir="box">
-    <img src="laptop.avif" width="200px" alt="">
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, assumenda eos ab vitae maiores suscipit hic dolor neque? Nisi, corrupti?</p>
-</div>
-</div>    
+    <div class="container">
+
+        <div class="box">
+            <img src="laptop.avif" width="100" />
+            <h2 id="head1">Welcome to CodeHelp</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ratione a quibusdam? Animi atque iste aliquam pariatur laboriosam quisquam placeat, facere voluptates necessitatibus, vitae saepe!</p>
+        </div>
+
+    </div>
 </body>
+
 </html>
